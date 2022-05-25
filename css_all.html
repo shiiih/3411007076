@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Text文字 */
+             /* 顏色 */
+             .text_color{
+                  color: green;
+             }
+             /* 文字對齊 */
+             .text_align{
+                 text-align: center;
+                 /* text-align:left;*/
+                 /* text-aling:right; */
+             }
+             /* 行高 */
+             .text_line_height{
+                line-height: 50px;
+             }
+             /* 文字段線 */
+             .text_decoration{
+                 /* text-decoration:underline; */
+                 /* text-decoration:overline; */
+                 /* text-decoration:none; */
+                text-decoration: line-through;
+             }
+             /* 文字縮排 */
+             .text_indent{
+                 text-indent: 100px;
+             }
+             /* 文字字距 */
+             .text_spacing{
+                 etter-spacing: 20px;
+             }
+             /* Font字型 */
+                 /* 字體樣式 */
+                 .font_style{
+                     /* 正常 */
+                     /* font_style:normal; */
+                     /* 斜體 */
+                     font-style:italic;
+                     /* 傾斜體 */
+                     /* font-style:oblique; */
+                 }
+                 /* 字體粗細 */
+                 .font_weight{
+                /* 正常 */
+                /* font-weight: norml; */
+                /* 粗體 */
+                font-weight:bold;
+                /* font-weight: 100; */
+                 }
+                 /* 字體大小 */
+                 .font_size{
+                     font-size: 30px;
+                 }
+                 /* 字型 */
+                 .font_family{
+                      font-family:"標改體" ;
+                 }
+                 /* Link連結 */
+                 /* 未訪問 */
+                 a:link{
+                     color: red;
+                 }
+                 /* 訪問過 */
+                 a:visited{
+                     color: green;
+                 }
+                 /* 移入 */
+                 a:hover{
+                     color: yellow;
+                 }
+                 /* 點一下 */
+                 a:active{
+                     color: gray;
+                 }
+                /* list列表 */
+                .list{
+                    /* 類型 */
+                    list-style-type: upper-roman;
+                    /* 位置 */
+                    list-style-position: inside;
+                    /* 圖片 */
+                    list-style-image: url("https://fakeimg.pl/15x15/");
+                }
+                 /* Table表格 */
+                  /* 邊框合併 */
+                table{
+                    border-collapse: collapse;
+                }
+                /* 水平、垂直對齊 */
+                td{
+                    /* 水平 */
+                    text-align: right;
+                    /* 垂直 */
+                    vertical-align: bottom;
+                }
+                /* 偶數行 */
+                tr:nth-child(even){
+                    background-color: blue;
+                    color: white;
+                  }
+                  /* 奇數行 */
+                  tr:nth-child(odd)
+                  {
+                      background-color: yellow;
+                  }
+                 /* margin */
+                 .margin{
+                     border-width: 1px;
+                     border-style: solid;
+                     /* 上下左右 */
+                     /* margin: 10px; */
+                     /* 上下，左右 */
+                     /* margin: 10px 30px; */
+                     /* 上，右，下，左 */
+                     margin: 5px 10px 15px 40px;
+                 }
+                 /* padding */
+                 .padding{
+                     border-width: 1px;
+                     border-style: solid;
+                     /* 上下左右 */
+                     /* padding: 10px; */
+                     /* 上下，左右 */
+                     /* padding: 10px 20px; */
+                     /* 上，下，左，右 */
+                     padding: 1px 5px 15px 30px;
+
+                 }
+                 /* border */
+                 .border{
+                     /* 縮寫 */
+                     /* border: blue dashed 1px; */
+                     /* border粗細 */
+                     border-width: 1px;
+                     /* border樣式 */
+                     border-style: dashed;
+                     /* border顏色 */
+                     border-color: blue;
+                 }
+                 /* display */
+                 .display1{
+                     display: inline;
+                     }
+                 .display2{
+                     display: block;
+                 }
+                 .display3{
+                     border: 1px solid;
+                     width: 200px;
+                     display: inline-block;
+                 }
+    </style>
+</head>
+<body>
+    <div class="text_color text_align text_line_height text_decoration text_indent text_spacing">
+       字體CSS
+    </div>
+    <div> 
+        <div class="font_style font_weight font-size font-family">
+            Font字型 123
+    </div>
+    <a href="https://www.google.com.tw">google</a>
+    <ol class="list">
+     <li>list清單</li>
+     <li>002</li>
+     <li>003</li>
+     <li>004</li>
+     <li>005</li>
+    </ol>
+     <table border="1" width="300" height="300" cellpadding="0" cellpadding="0">
+         <tr>
+             <td>001</td>
+             <td>002</td>
+             <td>003</td>
+             <td>004</td>
+             <td>005</td>
+             
+         </tr>
+         <tr>
+            <td>001</td>
+             <td>002</td>
+             <td>003</td>
+             <td>004</td>
+             <td>005</td>
+         </tr>
+         <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+         </tr>
+         <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+         </tr>
+     </table>
+     <hr>
+     <!--box model-->
+
+     <div class="margin">margin</div>
+     <hr>
+     <div class="padding">padding</div>
+     <hr>
+     <div class="border">border</div>
+     <hr>
+     <!--display-->
+     <div class="display1">div1</div>
+     <div class="display1">div2</div>
+     <span class="display2">span1</span>
+     <span class="display2">span2</span>
+     <Span class="display3">span3</Span>
+     <hr>
+     <span>span1</span>
+     <span style="display:none">span2</span>
+     <span>span3</span>
+     <hr>
+     <span>span1</span>
+     <span style="visibility: hidden;">span2</span>
+     <span>span3</span>
+
+</body>
+</html>
